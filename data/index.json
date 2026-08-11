@@ -1,0 +1,2422 @@
+{
+ "categories": [
+  {
+   "id": "adiya",
+   "ur": "ادعیہ",
+   "en": "Duas",
+   "note": "روزانہ اور مشہور دعائیں"
+  },
+  {
+   "id": "ziarat",
+   "ur": "زیارات",
+   "en": "Ziyarat",
+   "note": "معصومینؑ کی زیارتیں"
+  },
+  {
+   "id": "amaal",
+   "ur": "اعمال",
+   "en": "Amaal",
+   "note": "دنوں اور مہینوں کے اعمال"
+  },
+  {
+   "id": "namaz",
+   "ur": "نماز",
+   "en": "Namaz",
+   "note": "نمازیں اور تعقیبات"
+  }
+ ],
+ "groups": [
+  {
+   "id": "muharram",
+   "ur": "محرم",
+   "count": 0
+  },
+  {
+   "id": "safar",
+   "ur": "صفر",
+   "count": 0
+  },
+  {
+   "id": "rabi1",
+   "ur": "ربیع الاول",
+   "count": 0
+  },
+  {
+   "id": "rabi2",
+   "ur": "ربیع الثانی",
+   "count": 0
+  },
+  {
+   "id": "jumada1",
+   "ur": "جمادی الاولیٰ",
+   "count": 0
+  },
+  {
+   "id": "jumada2",
+   "ur": "جمادی الثانیہ",
+   "count": 0
+  },
+  {
+   "id": "rajab",
+   "ur": "رجب",
+   "count": 0
+  },
+  {
+   "id": "shaban",
+   "ur": "شعبان",
+   "count": 0
+  },
+  {
+   "id": "ramadan",
+   "ur": "رمضان",
+   "count": 0
+  },
+  {
+   "id": "shawwal",
+   "ur": "شوال",
+   "count": 0
+  },
+  {
+   "id": "dhulqada",
+   "ur": "ذی القعدہ",
+   "count": 0
+  },
+  {
+   "id": "dhulhijja",
+   "ur": "ذی الحجہ",
+   "count": 0
+  }
+ ],
+ "items": [
+  {
+   "id": "adiya-001",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "بلا عنوان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-002",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "منتخب مفاتیح الجنان (به چهار زبان عربی، فارسی، اردو، انگلیسی)",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-003",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "مشخصات کتاب",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-004",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "اشاره",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-005",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "فهرست کتاب",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-006",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "مقدمه",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-007",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "المقدمة",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-008",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "مقدمہ",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-009",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Introduction",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-010",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "«سورة قدر»",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-011",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "«سورة کوثر»",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-012",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "«سورة کافرون»",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-013",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "«سورة نصر»",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-014",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "«سورة توحید»",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-015",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "«سورة فلق»",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-016",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "«سورة ناس»",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-017",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "«و ان یکاد»",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-018",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "«آیهْ الکرسی»",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-019",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای امام زمان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-020",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء الامام صاحب الزمان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-021",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعائے امام زمان عجل اللہ تعالی فرجہ الشریف",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-022",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The prayer (du) of Imam of the Age (aj)",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-023",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "در ذکر دعاهای هفته",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-024",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "ادعیة ایام الاسبوع",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-025",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "هفته کی دنوں کی دعائین",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-026",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The weekly prayers",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-027",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای روز شنبه - دعای یوم السبت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-028",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "سنیچر کی دن کی دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-029",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Saturday prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-030",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای روز یکشنبه - دعاء یوم الاحد",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-031",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "اتوار کے دن کی دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-032",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Sunday prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-033",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای روز دوشنبه - دعاء یوم الاثنین",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-034",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "پیر کے دن کی دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-035",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Monday prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-036",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای روز سه شنبه - دعاء یوم الثلاثاء",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-037",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "منگل کے دن کی دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-038",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Tuseday prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-039",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای روز چهارشنبه - دعاء یوم الاربعاء",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-040",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "بدھ کے دن کی دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-041",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Wednesday prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-042",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای روز پنجشنبه - دعاء یوم الخمیس",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-043",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "جمعرات کے دن کی دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-044",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Thursday prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-045",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای روز جمعه - دعاء یوم الجمعه",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-046",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "جمعہ کے دن کی دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-047",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Friday prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-048",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیبات مشترکه نمازها",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-049",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "التعقیبات المشترکة فی الصلوات",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-050",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نمازوں کی مشترکہ تعقیبات",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-051",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Common continuations of prayers",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-052",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیبات مختصّه نمازها",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-053",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "التعقیبات الخاصة لکل صلاة",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-054",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز کی مخصوص تعقیبات",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-055",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Special continuations of prayers",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-056",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیب نماز ظهر - تعقیب",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-057",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "صلوة الظهر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-058",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیبات نماز ظہر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-059",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Continuation of noon prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-060",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیب نماز عصر - تعقیب صلاة العصر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-061",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیبات نمازعصر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-062",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Continuation of after noon prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-063",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیب نماز مغرب - تعقیب صلاة المغرب",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-064",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیبات نماز مغرب",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-065",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Continuation of evening prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-066",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز غفیله",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-067",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "صلاة الغفیلة",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-068",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز غفیلہ",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-069",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Gofeila prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-070",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیب نماز عشاء - تعقیب صلاة العشاء",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-071",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیبات نماز عشاء",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-072",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Continuation of night prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-073",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیب نماز صبح - تعقیب صلاة الصبح",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-074",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تعقیبات نما ز صبح",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-075",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Continuation of Morning Prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-076",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای کمیل بن زیاد",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-077",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء کمیل بن زیاد",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-078",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعائے کمیل ابن زیاد",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-079",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The prayer of kumeil-ibne-ziyad",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-080",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای توسّل",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-081",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء التوسل",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-082",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعائے توسل",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-083",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Supplication (Tawassul) prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-084",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای ندبه",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-085",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء ندبه",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-086",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعائے ندبہ",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-087",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Lamentatin (Nudba) prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-088",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای سحر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-089",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء السحر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-090",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعائے سحر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-091",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Down prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-092",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای فرج",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-093",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء فرج",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-094",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعائے فرج",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-095",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Deliverence (Faraj) prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-096",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارت ائمه در ایام هفته",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-097",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارة الائمة فی ایام الاسبوع",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-098",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "ہفتہ کے دنوں میں ائمہ کی زیارتیں",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-099",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Pilgrimage of Imam (a) during the",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-100",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارت حضرت رسول صلی اللہ علیہ وآلہ وسلم در روز شنبه",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-101",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارة الرسول صلی اللہ علیہ وآلہ وسلم فی یوم السبت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-102",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "سنیچر کے دن حضرت رسول خدا صلی اللہ علیہ وآلہ وسلم کی زیارت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-103",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Pilgrimage of the holly Apostle (s) at Saturday...",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-104",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "روز یک شنبه زیارت حضرت امیرالمؤمنین علیه السّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-105",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "یوم الاحد زیارة امیر المومنین علیه السّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-106",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "اتوار کے دن حضرت امیر المومنین علیہ السلام کی زیارت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-107",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Pilgrimage of Amir-al-Muminin (a) at Sunday.",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-108",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارت حضرت فاطمه زهراءعلیهاالسّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-109",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارة فاطمة الزهراءعلیهاالسّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-110",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "حضرت فاطمہ زہرا سلام اللہ علیہا کی زیارت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-111",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Pilgrimage of Hazrat Fatima-Zahra (s)",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-112",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "روز دوشنبه زیارت امام حسن علیه السّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-113",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "یوم الاثنین زیارة الامام الحسن علیه السّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-114",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "پیر کے دن حضرت امام حسن علیہ السلام کی زیارت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-115",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Pilgrimage of Imam Hassan (a) at Monday",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-116",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "روز دوشنبه زیارت امام حسین علیه السّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-117",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارة الامام الحسین علیه السّلام فی یوم الاثنین",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-118",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "پیر کے دن حضرت امام حسین علیہ السلام کی زیارت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-119",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Pilgrimage of Imam Hussein (a) at Monday",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-120",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "روز سه شنبه زیارت حضرت امام زین العابدین و امام محمّد باقر و امام جعفر صادق علیهم السّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-121",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "روز پنجشنبه زیارت امام حسن عسکری علیه السّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-122",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "یوم الخمیس زیارة الامام حسن العسکری علیه السّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-123",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "جمعرات کے دن حضرت امام حسن عسکری علیہ السلام کی زیارت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-124",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Pilgrimage of Imam Hassan Asqari ('a) Thursday.",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-125",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "روز جمعه زیارت امام الزّمان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-126",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "یوم الجمعه زیارة الامام صاحب الامر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-127",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "جمعہ کے دن حضرت صاحب الزمان عجل اللہ تعالی کی زیارت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-128",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Pilgrimage of Imam of Age (aj) at Friday",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-129",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارت عاشوراء",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-130",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارة عاشوراء",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-131",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارت عاشورا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-132",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Ashura Pilgrimage",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-133",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای علقمه",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-134",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء علقمه",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-135",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعائے علقمہ",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-136",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Algama Prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-137",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارت وارث",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-138",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارة وارث",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-139",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارت وارث",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-140",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Inheritor (varith) Prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-141",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارت مختصر امام رضاعلیه السّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-142",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیاره مختصرة للامام الرضاعلیه السّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-143",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "حضرت امام رضا علیہ السلام کی مختصر زیارت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-144",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The brief Prayer Piligrimage of Imam Reza (a)...",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-145",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارت حضرت فاطمه معصومه علیهماالسّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-146",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارة السیدة معصومة علیهماالسّلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-147",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارت حضرت فاطمہ معصومہ علیہا السلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-148",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Pligrimage of Hazrat Masuma (s)",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-149",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارت قبور مؤمنین",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-150",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارة قبور المؤمنین",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-151",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "مومنین کی قبروں کی زیاتیں",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-152",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Visitation of the graves of the believers",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-153",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز شب",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-154",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "صلاة اللیل",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-155",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز شب",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-156",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Night Supererogatory Prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-157",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز حضرت حجّت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-158",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "صلاة الحجة",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-159",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نمازحضرت حجت علیہ السلام",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-160",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The prayer of Hazrate Hojjat",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-161",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز عید",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-162",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "صلاة العید",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-163",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز عید",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-164",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Feast Prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-165",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز میت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-166",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "صلاة المیت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-167",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز میت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-168",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز میت اس میں پانچ تکبیریں ہیں اور بہتر ہے کہ نیت کے بعد یہ کہیں",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-169",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Funeral Prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-170",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تلقین میت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-171",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تلقین المیت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-172",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "تلقین میت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-173",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Funeral rite",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-174",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز شب دفن",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-175",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "صلاة لیلة الدفن",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-176",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نماز وحشت",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-177",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The prayer of burriul night",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-178",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای ماه رجب",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-179",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء شهر رجب",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-180",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "ماہ رجب کی دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-181",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The special prayer of the month of Rajab",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-182",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعا و مناجات ماه شعبان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-183",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء و مناجاة شهرشعبان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-184",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "ماہ شعبان کی دعائیں او رمناجات",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-185",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The prayers and supplication of the month of Shaban.",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-186",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای شب نیمه شعبان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-187",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء لیلة النصف من شعبان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-188",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "نیمہ شعبان کی رات کی دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-189",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Prayer of the night of half-of the month of Sha'ban.",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-190",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "اعمال ماه مُبارک رمضان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-191",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "اعمال شهر رمضان المبارک",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-192",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "ماه مبارک رمضان کے اعمال",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-193",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The (special) deeds of the holy month of Ramadan.",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-194",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "چاند دیکھنے کی دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-195",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای رؤیت هلال - دعاء رؤیة الهلال",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-196",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Prayer at the time of visiting the half-moon",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-197",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای هر شب ماه رمضان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-198",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء کل لیلة من شهر رمضان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-199",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "ماہ مبارک رمضان کی ہر رات کی دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-200",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Of the prayer of every night Ramadan",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-201",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای ایام ماه مبارک رمضان",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-202",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "ادعیة ایام شهر رمضان المبارک",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-203",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "ماہ مبارک رمضان کے دنوں کی دعائیں",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-204",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The prayers of the holy month of Ramadan",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-205",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "اعمال مشترک شب های قدر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-206",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "اعمال لیلة القدر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-207",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "شب قد ر کے مشترکہ اعمال",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-208",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The (special) deeds of the night of destiny (Qadr)",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-209",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "اعمال مخصوصه شب نوزدهم",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-210",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "الاعمال الخاصة فی لیلة التاسع عشر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-211",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "انیسویں رات کے مخصوص اعمال",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-212",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Special deeds of nineteenth night",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-213",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "اعمال شب بیست و یکم و بیست سوم",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-214",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای ماه رمضان بعد از نمازهای واجب",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-215",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء شهر رمضان بعد صلاة الفریضة",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-216",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "ماہ مبارک رمضان میں پنجگانہ واجب نمازوں کے بعد پڑھی جانے والے دعا",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-217",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The prayer of the holy month of Ramadan after obligator prayer.",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-218",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای افطار",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-219",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء الافطار",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-220",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعا ئے افطار",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-221",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Fast-breaking Prayer",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-222",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعای جوشن کبیر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-223",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعاء جوشن الکبیر",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-224",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "Supplication (Jushan-e-Kabir)",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-225",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "حدیث شریف کساء",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-226",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "حدیث الکساء الشریف",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-227",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "حدیث کساء",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-228",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "The Noble Tradition of the Garment (Hadith-e-kasa)",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "adiya-229",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "درباره مركز",
+   "en": "",
+   "when": "",
+   "audio_count": 0
+  },
+  {
+   "id": "amin-allah",
+   "cat": "ziarat",
+   "group": "",
+   "hijri": [],
+   "ur": "زیارتِ امین اللہ",
+   "en": "Ziyarat Amin Allah",
+   "when": "ہر روضہ پر",
+   "audio_count": 1
+  },
+  {
+   "id": "faraj",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعائے فرج",
+   "en": "Dua Faraj",
+   "when": "ہر وقت",
+   "audio_count": 1
+  },
+  {
+   "id": "kumayl",
+   "cat": "adiya",
+   "group": "",
+   "hijri": [],
+   "ur": "دعائے کمیل",
+   "en": "Dua Kumayl",
+   "when": "شب جمعہ",
+   "audio_count": 1
+  },
+  {
+   "id": "tasbih-zahra",
+   "cat": "namaz",
+   "group": "",
+   "hijri": [],
+   "ur": "تسبیحِ فاطمہ زہراؑ",
+   "en": "Tasbih Fatima",
+   "when": "ہر نماز کے بعد",
+   "audio_count": 1
+  }
+ ]
+}
