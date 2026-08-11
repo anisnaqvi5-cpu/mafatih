@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content Builder — مفاتیح</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Amiri&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--night:#0E1830;--gold:#C8A03C;--paper:#FBF6EA;--line:#DDD2BC}
+body{background:var(--paper);color:#1B2A47;font-family:"Inter",sans-serif;margin:0;padding:20px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-family:"Noto Nastaliq Urdu",serif;font-size:22px;line-height:2;color:var(--night)}
+p.help{font-family:"Noto Nastaliq Urdu",serif;line-height:2.2;font-size:14px;color:#5C6478}
+label{display:block;font-size:12px;letter-spacing:.05em;color:#6b7488;margin:14px 0 5px;direction:ltr;text-align:left}
+input,select,textarea{
+  width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;
+  background:#fff;font-size:15px;font-family:"Amiri",serif
+}
+textarea{min-height:150px;line-height:2}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+button{
+  background:var(--night);color:var(--paper);border:0;border-radius:10px;
+  padding:11px 18px;font-size:14px;cursor:pointer;margin:16px 0 0 8px;font-family:"Inter",sans-serif
+}
+button.gold{background:var(--gold);color:var(--night)}
+pre{
+  background:var(--night);color:#EDE4CE;padding:14px;border-radius:10px;
+  direction:ltr;text-align:left;overflow:auto;font-size:12px;max-height:320px
+}
+.warn{color:#A63D40;font-family:"Noto Nastaliq Urdu",serif;line-height:2}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Content Builder — نیا متن شامل کریں</h1>
+<p class="help">
+عربی متن اور اردو ترجمہ دو الگ خانوں میں paste کریں۔ <b>ہر سطر ایک لائن</b> — یعنی عربی کی پہلی سطر کا ترجمہ اردو کی پہلی سطر ہونا چاہیے، دونوں میں سطروں کی تعداد برابر ہو۔ پھر Generate دبائیں اور فائل کو <code>data/items/</code> میں save کریں۔
+</p>
+
+<div class="grid">
+  <div><label>ID (انگریزی، بغیر space)</label><input id="id" placeholder="dua-tawassul"></div>
+  <div><label>CATEGORY</label>
+    <select id="cat">
+      <option value="adiya">ادعیہ</option>
+      <option value="ziarat">زیارات</option>
+      <option value="amaal">اعمال</option>
+      <option value="namaz">نماز</option>
+    </select>
+  </div>
+  <div><label>TITLE (اردو)</label><input id="ur" placeholder="دعائے توسل"></div>
+  <div><label>TITLE (English)</label><input id="en" placeholder="Dua Tawassul"></div>
+  <div><label>WHEN (کب پڑھی جائے)</label><input id="when" placeholder="ہر منگل"></div>
+  <div><label>AUDIO — ہر سطر: قاری کا نام | فائل کا راستہ</label>
+    <textarea id="audio" style="min-height:70px;font-family:'Noto Nastaliq Urdu',serif"
+      placeholder="میثم مطیعی | audio/tawassul-1.mp3"></textarea></div>
+</div>
+
+<label>ARABIC — ہر سطر الگ لائن میں</label>
+<textarea id="ar"></textarea>
+
+<label>URDU TRANSLATION — اتنی ہی سطریں</label>
+<textarea id="tr" style="font-family:'Noto Nastaliq Urdu',serif"></textarea>
+
+<button class="gold" id="gen">Generate JSON</button>
+<button id="dl">Download file</button>
+<button id="copy">Copy</button>
+
+<div id="msg" class="warn"></div>
+<pre id="out">— ابھی کچھ نہیں —</pre>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+let current = null;
+
+function build(){
+  const ar = $('#ar').value.split('\n').map(s => s.trim()).filter(Boolean);
+  const tr = $('#tr').value.split('\n').map(s => s.trim()).filter(Boolean);
+  const msg = [];
+  if (!$('#id').value.trim()) msg.push('ID خالی ہے۔');
+  if (!ar.length) msg.push('عربی متن خالی ہے۔');
+  if (tr.length && tr.length !== ar.length)
+    msg.push(`سطریں برابر نہیں: عربی ${ar.length}، اردو ${tr.length}۔`);
+  $('#msg').textContent = msg.join(' ');
+
+  current = {
+    id: $('#id').value.trim(),
+    cat: $('#cat').value,
+    ur: $('#ur').value.trim(),
+    en: $('#en').value.trim(),
+    when: $('#when').value.trim(),
+    audio: $('#audio').value.split('\n').map(r => r.trim()).filter(Boolean).map((r, n) => {
+      const [rec, file] = r.split('|').map(x => (x || '').trim());
+      return { reciter: rec || ('صوت ' + (n + 1)), file: file || rec };
+    }),
+    lines: ar.map((a, i) => ({ ar: a, ur: tr[i] || '' }))
+  };
+  $('#out').textContent = JSON.stringify(current, null, 1);
+}
+
+$('#gen').onclick = build;
+
+$('#dl').onclick = () => {
+  if (!current) build();
+  if (!current || !current.id) return;
+  const blob = new Blob([JSON.stringify(current, null, 1)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = current.id + '.json';
+  a.click();
+};
+
+$('#copy').onclick = async () => {
+  if (!current) build();
+  try { await navigator.clipboard.writeText($('#out').textContent); $('#copy').textContent = 'Copied ✓'; }
+  catch(e){ $('#msg').textContent = 'Copy نہیں ہوا — دستی طور پر select کریں۔'; }
+};
+</script>
+</body>
+</html>
