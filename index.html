@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مفاتیح — Duas & Ziyarat</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0E1830">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0E1830;      /* گہرا رات جیسا نیلا */
+  --ink:#1B2A47;
+  --paper:#FBF6EA;      /* پرانے کاغذ کا رنگ */
+  --paper-2:#F2EADA;
+  --gold:#C8A03C;
+  --teal:#2E6F6A;
+  --muted:#7C8598;
+  --line:rgba(200,160,60,.28);
+  --fs:20px;            /* عربی فونٹ سائز، settings سے بدلتا ہے */
+  --radius:14px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:"Noto Naskh Arabic","Inter",system-ui,sans-serif;
+  padding-bottom:76px;
+  overscroll-behavior-y:none;
+}
+body.dark{--paper:#0E1830;--paper-2:#16233F;--ink:#EDE4CE;--muted:#8E9BB4;background:var(--paper);color:var(--ink)}
+.nastaliq{font-family:"Noto Nastaliq Urdu",serif;line-height:2.2}
+.arabic{font-family:"Amiri",serif;direction:rtl}
+.latin{font-family:"Inter",sans-serif;direction:ltr;display:inline-block}
+
+/* ── header ───────────────────────────── */
+header{
+  background:var(--night);color:var(--paper);
+  padding:calc(env(safe-area-inset-top) + 14px) 16px 16px;
+  position:sticky;top:0;z-index:20;
+}
+body.dark header,body.dark .hero,body.dark .rhead,body.dark .toolbar{background:#0A1226}
+.hrow{display:flex;align-items:center;gap:12px;justify-content:space-between}
+.brand{font-family:"Noto Nastaliq Urdu",serif;font-size:22px;line-height:1.8;color:var(--gold)}
+.iconbtn{
+  background:rgba(255,255,255,.08);border:0;color:inherit;
+  width:38px;height:38px;border-radius:11px;font-size:17px;cursor:pointer;
+  display:grid;place-items:center
+}
+.iconbtn:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.search{
+  margin-top:14px;display:flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.10);border-radius:12px;padding:10px 14px
+}
+.search input{
+  flex:1;background:transparent;border:0;color:var(--paper);font-size:15px;
+  font-family:"Noto Naskh Arabic",sans-serif
+}
+.search input::placeholder{color:rgba(251,246,234,.55)}
+.search input:focus{outline:none}
+.crumb{
+  display:flex;align-items:center;gap:8px;margin:12px -16px -16px;padding:9px 16px;
+  background:rgba(255,255,255,.07);font-size:12px;color:rgba(251,246,234,.75)
+}
+.crumb button{background:none;border:0;color:inherit;font-size:14px;cursor:pointer}
+
+/* ── home hero ────────────────────────── */
+.hero{
+  background:var(--night);color:var(--paper);
+  padding:6px 16px 30px;text-align:center;
+  border-bottom-left-radius:26px;border-bottom-right-radius:26px
+}
+.datestrip{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  color:var(--gold);font-size:13px;letter-spacing:.04em
+}
+.datestrip .rule{height:1px;flex:1;max-width:70px;background:var(--line)}
+.salawat{
+  font-family:"Amiri",serif;font-size:26px;line-height:2;margin:18px 0 6px;
+  color:var(--paper)
+}
+.today{
+  margin:18px auto 0;max-width:520px;background:rgba(255,255,255,.07);
+  border:1px solid var(--line);border-radius:var(--radius);padding:16px;text-align:right
+}
+.today .lbl{font-size:12px;color:var(--gold);letter-spacing:.06em}
+.today .ttl{font-family:"Noto Nastaliq Urdu",serif;font-size:19px;line-height:2.1;margin-top:6px}
+
+/* ── grid & cards ─────────────────────── */
+main{padding:18px 16px 10px;max-width:640px;margin:0 auto}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:-24px;position:relative;z-index:5}
+.tile{
+  background:var(--paper-2);border:1px solid rgba(27,42,71,.08);border-radius:var(--radius);
+  padding:16px 14px;text-align:right;cursor:pointer;font:inherit;color:inherit;
+  box-shadow:0 6px 18px rgba(14,24,48,.06)
+}
+.tile b{font-family:"Noto Nastaliq Urdu",serif;font-size:17px;font-weight:600;line-height:2}
+.tile span{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.sechead{
+  display:flex;align-items:center;gap:10px;margin:26px 0 12px;color:var(--muted);font-size:13px
+}
+.sechead::after{content:"";flex:1;height:1px;background:var(--line)}
+.row{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  background:var(--paper-2);border:1px solid rgba(27,42,71,.07);border-radius:12px;
+  padding:14px 15px;margin-bottom:9px;cursor:pointer;width:100%;font:inherit;color:inherit;text-align:right
+}
+.row .t{font-family:"Noto Nastaliq Urdu",serif;font-size:16px;line-height:2.1}
+.row .s{color:var(--muted);font-size:12px}
+.chev{color:var(--gold);font-size:18px}
+.row .grow{flex:1;min-width:0;cursor:pointer}
+.row .t{display:block}
+.dl{
+  background:rgba(46,111,106,.10);color:var(--teal);border:0;border-radius:9px;
+  padding:8px 11px;font-size:12px;font-family:"Inter",sans-serif;cursor:pointer;white-space:nowrap
+}
+.dl.done{background:rgba(200,160,60,.16);color:var(--gold)}
+.kebab{background:none;border:0;color:var(--muted);font-size:19px;cursor:pointer;padding:4px 6px}
+.catsearch{
+  display:flex;align-items:center;gap:8px;background:var(--paper-2);
+  border:1px solid rgba(27,42,71,.08);border-radius:12px;padding:10px 14px;margin-bottom:14px
+}
+.catsearch input{
+  flex:1;border:0;background:transparent;font-size:14px;color:inherit;
+  font-family:"Noto Naskh Arabic",sans-serif
+}
+.catsearch input:focus{outline:none}
+.sheet{position:fixed;inset:0;z-index:60;background:rgba(14,24,48,.5);display:flex;align-items:flex-end}
+.sheetbox{
+  background:var(--paper);width:100%;border-radius:20px 20px 0 0;padding:10px 12px
+    calc(env(safe-area-inset-bottom) + 12px)
+}
+.sheettitle{
+  font-family:"Noto Nastaliq Urdu",serif;font-size:16px;line-height:2.2;
+  padding:8px 12px;color:var(--muted)
+}
+.sheetbox button{
+  display:block;width:100%;text-align:right;background:none;border:0;
+  padding:14px 12px;font-size:15px;color:var(--ink);cursor:pointer;
+  font-family:"Noto Nastaliq Urdu",serif;border-top:1px solid rgba(27,42,71,.07)
+}
+.sheetbox button.cancel{color:var(--muted)}
+.dispRow{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px;border-top:1px solid rgba(27,42,71,.07);
+  font-family:"Noto Nastaliq Urdu",serif;font-size:15px
+}
+.dispRow .tbtn{background:var(--night);margin-inline-start:6px}
+.scroller{display:flex;align-items:center;gap:8px;margin-inline-start:auto;padding:0 6px}
+.sbtn{
+  background:rgba(255,255,255,.08);color:var(--paper);border:0;width:38px;height:38px;
+  border-radius:10px;font-size:16px;cursor:pointer;transition:.2s
+}
+.sbtn.on{background:var(--gold);color:var(--night)}
+#scrollSpeed{width:60px;accent-color:var(--gold)}
+.toast{
+  position:fixed;bottom:96px;inset-inline:24px;z-index:70;text-align:center;
+  background:var(--night);color:var(--paper);padding:12px;border-radius:12px;font-size:13px
+}
+
+/* ── reading view (signature) ─────────── */
+.reader{padding-bottom:30px}
+.rhead{
+  background:var(--night);color:var(--paper);margin:-18px -16px 0;
+  padding:16px;display:flex;align-items:center;justify-content:space-between;gap:10px
+}
+.rhead .t{font-family:"Noto Nastaliq Urdu",serif;font-size:19px;line-height:2}
+.toolbar{
+  display:flex;gap:8px;justify-content:flex-start;margin:0 -16px 18px;padding:10px 16px;
+  background:var(--night);color:var(--paper);
+  border-bottom-left-radius:22px;border-bottom-right-radius:22px
+}
+.tbtn{
+  background:rgba(255,255,255,.08);color:var(--paper);border:0;border-radius:10px;
+  padding:8px 13px;font-size:13px;font-family:"Inter",sans-serif;cursor:pointer
+}
+.tbtn.on{background:var(--gold);color:var(--night)}
+.line{
+  border-right:2px solid transparent;padding:14px 14px 14px 6px;margin-bottom:4px;
+  border-radius:10px;cursor:pointer;transition:opacity .25s,background .25s
+}
+.line .ar{font-family:"Amiri",serif;font-size:var(--fs);line-height:2.1}
+.line .ur{
+  font-family:"Noto Nastaliq Urdu",serif;font-size:calc(var(--fs) * .72);line-height:2.4;
+  color:var(--muted);margin-top:8px
+}
+.reader.focus .line{opacity:.28}
+.reader.focus .line.active{
+  opacity:1;background:var(--paper-2);border-right-color:var(--gold)
+}
+.hide-ur .line .ur{display:none}
+.line.alt{background:rgba(27,42,71,.035)}
+.reader.dense .line{line-height:1.8}
+.reader.normal .line{line-height:2.1}
+.reader.spacious .line{line-height:2.6}
+.reader.sepia{background:#F4EFE7}
+.reader.sepia .line{background:rgba(139,117,91,.03)}
+.reader.warm{background:#faf6f0}
+.reader.warm .line{background:rgba(200,160,60,.05)}
+body.dark .line.alt{background:rgba(255,255,255,.04)}
+.reader{padding-bottom:120px}
+.player{
+  position:fixed;bottom:76px;inset-inline:0;z-index:25;
+  background:var(--night);color:var(--paper);
+  display:flex;align-items:center;gap:10px;padding:10px 14px;
+  border-top:1px solid var(--line)
+}
+.player .pplay{
+  background:var(--gold);color:var(--night);border:0;width:42px;height:42px;
+  border-radius:50%;font-size:16px;cursor:pointer;flex:none
+}
+.player .pbtn{background:none;border:0;color:var(--muted);font-size:12px;cursor:pointer;flex:none;font-family:'Inter',sans-serif;padding:4px 8px}
+.dispbtn{
+  background:rgba(27,42,71,.08);border:0;color:inherit;border-radius:8px;
+  padding:8px 12px;font-size:13px;font-family:"Noto Nastaliq Urdu",serif;cursor:pointer;
+  transition:.2s
+}
+.dispbtn.on{background:var(--gold);color:var(--night);font-weight:600}
+.repeatbar{
+  background:var(--night);color:var(--gold);padding:8px 14px;
+  font-family:"Noto Nastaliq Urdu",serif;font-size:13px;
+  display:flex;align-items:center;justify-content:space-between;
+  border-bottom:1px solid var(--line)
+}
+.repcnt{font-weight:600}
+.repcnt .latin{font-size:11px}
+.repbtn{background:rgba(255,255,255,.08);color:var(--paper);border:0;width:32px;height:32px;border-radius:8px;font-size:16px;cursor:pointer}
+#repInput{font-size:13px;color:var(--gold)}
+.player .rep{
+  background:rgba(255,255,255,.08);color:var(--paper);border:0;border-radius:8px;
+  padding:6px 10px;font-size:11px;cursor:pointer;flex:none
+}
+.player .ptime{font-size:11px;color:var(--gold);flex:none;font-variant-numeric:tabular-nums}
+#pseek{flex:1;accent-color:var(--gold);min-width:40px}
+.dl.play{background:rgba(200,160,60,.18);color:var(--gold)}
+
+/* ── tasbih ───────────────────────────── */
+.counter{text-align:center;padding:20px 0}
+.count{
+  font-family:"Inter",sans-serif;font-size:64px;font-weight:600;color:var(--ink);
+  font-variant-numeric:tabular-nums
+}
+.tapzone{
+  margin:18px auto;width:220px;height:220px;border-radius:50%;
+  background:var(--night);color:var(--gold);display:grid;place-items:center;
+  font-family:"Noto Nastaliq Urdu",serif;font-size:22px;cursor:pointer;border:0;
+  box-shadow:0 10px 30px rgba(14,24,48,.25)
+}
+.tapzone:active{transform:scale(.98)}
+
+/* ── bottom nav ───────────────────────── */
+nav{
+  position:fixed;bottom:0;inset-inline:0;z-index:30;
+  background:var(--paper-2);border-top:1px solid rgba(27,42,71,.08);
+  display:grid;grid-template-columns:repeat(4,1fr);
+  padding:8px 6px calc(env(safe-area-inset-bottom) + 8px)
+}
+nav button{
+  background:none;border:0;color:var(--muted);font:inherit;font-size:11px;cursor:pointer;
+  display:grid;gap:3px;justify-items:center;font-family:"Inter",sans-serif
+}
+nav button .ico{font-size:19px}
+nav button.on{color:var(--gold)}
+.installbar{
+  position:fixed;bottom:84px;inset-inline:16px;z-index:29;display:none;
+  background:var(--gold);color:var(--night);border-radius:12px;padding:12px 14px;
+  align-items:center;justify-content:space-between;gap:10px;
+  box-shadow:0 8px 24px rgba(14,24,48,.2)
+}
+.installbar.show{display:flex}
+.installbar button{
+  background:var(--night);color:var(--paper);border:0;border-radius:9px;
+  padding:8px 14px;font-family:"Inter",sans-serif;font-size:13px;cursor:pointer
+}
+.todaybtn{
+  width:100%;background:var(--night);color:var(--gold);border:0;border-radius:12px;
+  padding:15px;font-family:"Noto Nastaliq Urdu",serif;font-size:15px;line-height:2;
+  cursor:pointer;margin-bottom:14px
+}
+.row.now{border-color:var(--gold);background:rgba(200,160,60,.10)}
+.searchgroup{margin-bottom:14px}
+.grouphead{
+  display:flex;align-items:center;gap:8px;
+  background:var(--night);color:var(--gold);padding:12px 14px;
+  border-radius:12px;font-family:"Noto Nastaliq Urdu",serif;font-size:14px;
+  line-height:2;cursor:pointer;user-select:none
+}
+.grouphead .gtog{font-size:13px;min-width:12px}
+.grouphead .gcount{font-size:11px;margin-inline-start:auto;color:rgba(200,160,60,.8)}
+.grouplist{display:flex;flex-direction:column;gap:9px;margin:10px 2px 0}
+.grouplist.hide{display:none}
+.empty{text-align:center;color:var(--muted);padding:40px 10px;font-size:14px}
+.searchgroup{margin-bottom:14px}
+.grouphead{
+  display:flex;align-items:center;gap:10px;
+  background:var(--night);color:var(--gold);padding:11px 14px;
+  border-radius:12px;font-weight:600;font-family:"Noto Nastaliq Urdu",serif;
+  font-size:14px;line-height:2;user-select:none
+}
+.grouphead .gcount{font-size:11px;margin-inline-start:auto;color:rgba(200,160,60,.8)}
+.grouplist{display:flex;flex-direction:column;gap:9px;margin-top:10px;padding:0 2px}
+.grouplist.hide{display:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div id="app"></div>
+
+<div class="installbar" id="installbar">
+  <span class="nastaliq" style="font-size:14px">اپنے فون پر install کریں</span>
+  <button id="installBtn" class="latin">Install</button>
+</div>
+
+<nav>
+  <button data-go="#/home"     class="on"><span class="ico">⌂</span><span>Home</span></button>
+  <button data-go="#/index"><span class="ico">☰</span><span>فہرست</span></button>
+  <button data-go="#/tasbih"><span class="ico">◉</span><span>Tasbih</span></button>
+  <button data-go="#/settings"><span class="ico">⚙</span><span>Settings</span></button>
+</nav>
+
+<script>
+/* ════════ state ════════ */
+let DATA = { categories: [], items: [] };
+const store = {
+  get(k, d){ try{ return JSON.parse(localStorage.getItem('mf_'+k)) ?? d }catch(e){ return d } },
+  set(k, v){ try{ localStorage.setItem('mf_'+k, JSON.stringify(v)) }catch(e){} }
+};
+let bookmarks = store.get('bookmarks', []);
+let fontSize  = store.get('fontSize', 20);
+let showUrdu  = store.get('showUrdu', true);
+let dark      = store.get('dark', false);
+let count     = store.get('count', 0);
+let downloaded= store.get('downloaded', {});
+let autoScroll= store.get('autoScroll', false);
+let scrollSpeed= store.get('scrollSpeed', 50);
+let playSpeed= store.get('playSpeed', 1);
+let lineHeight= store.get('lineHeight', 2.1);
+let bgMode= store.get('bgMode', 'normal');
+let repeatCount= store.get('repeatCount', {});
+let repeatLimit= store.get('repeatLimit', 0);  /* 0 = off */
+let repeatPlayedTimes= 0;
+let audioEQ= store.get('audioEQ', 'normal');
+
+document.documentElement.style.setProperty('--fs', fontSize + 'px');
+const applyBg = () => {
+  const r = $('#reader'); if (r) {
+    r.classList.remove('normal','sepia','warm'); r.classList.add(bgMode);
+    r.style.lineHeight = lineHeight;
+  }
+};
+if (dark) document.body.classList.add('dark');
+
+/* ════════ helpers ════════ */
+const $  = s => document.querySelector(s);
+const app = $('#app');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const item = id => DATA.items.find(i => i.id === id);
+
+const HMONTHS = ['muharram','safar','rabi1','rabi2','jumada1','jumada2',
+                 'rajab','shaban','ramadan','shawwal','dhulqada','dhulhijja'];
+
+/* آج کی قمری تاریخ — {m: 1-12, d: 1-30} */
+function hijriNum(){
+  try{
+    const p = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura',
+      { day:'numeric', month:'numeric' }).formatToParts(new Date());
+    const g = t => +p.find(x => x.type === t).value;
+    return { m: g('month'), d: g('day') };
+  }catch(e){ return { m: 1, d: 1 } }
+}
+
+function hijri(){
+  try{
+    return new Intl.DateTimeFormat('ur-u-ca-islamic-umalqura',
+      { day:'numeric', month:'long', weekday:'long' }).format(new Date());
+  }catch(e){ return new Date().toLocaleDateString('ur') }
+}
+
+/* ════════ views ════════ */
+function viewHome(){
+  const featured = DATA.items[0];
+  return `
+  <header>
+    <div class="hrow">
+      <button class="iconbtn" data-go="#/bookmarks" aria-label="Bookmarks">☆</button>
+      <div class="brand">مفاتیح</div>
+      <button class="iconbtn" data-go="#/settings" aria-label="Settings">⚙</button>
+    </div>
+    <div class="search">
+      <span>⌕</span>
+      <input id="q" placeholder="دعا یا زیارت search کریں" autocomplete="off">
+    </div>
+  </header>
+  <section class="hero">
+    <div class="datestrip"><span class="rule"></span><span>${esc(hijri())}</span><span class="rule"></span></div>
+    <div class="salawat">اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَآلِ مُحَمَّد</div>
+    <div class="today">
+      <div class="lbl latin">TODAY</div>
+      <div class="ttl">${esc(featured ? featured.ur : '')} — ${esc(featured ? featured.when : '')}</div>
+    </div>
+  </section>
+  <main>
+    <div class="tiles">
+      ${DATA.categories.map(c => `
+        <button class="tile" data-go="#/cat/${c.id}">
+          <b>${esc(c.ur)}</b>
+          <span class="latin">${esc(c.en)}</span>
+        </button>`).join('')}
+    </div>
+    <div class="sechead"><span class="latin">Recent & popular</span></div>
+    ${DATA.items.slice(0,4).map(rowHTML).join('')}
+  </main>`;
+}
+
+function rowHTML(i){
+  const marked = bookmarks.includes(i.id);
+  const total  = i.audio_count || 0;
+  const got    = (downloaded[i.id] || 0);
+  return `<div class="row" data-id="${i.id}">
+      <span class="grow" data-go="#/read/${i.id}">
+        <span class="t">${esc(i.ur)}${marked ? ' ★' : ''}</span>
+        <span class="s latin">${got} of ${total} audio</span>
+      </span>
+      ${total ? (got
+        ? `<button class="dl play" data-go="#/read/${i.id}">▶ <span class="latin">Play</span></button>`
+        : `<button class="dl" data-dl="${i.id}">↓ <span class="latin">Download</span></button>`) : ''}
+      <button class="kebab" data-menu="${i.id}" aria-label="More">⋮</button>
+    </div>`;
+}
+
+/* ہر ردیف کا چھوٹا menu */
+function openMenu(id){
+  const it = item(id), marked = bookmarks.includes(id);
+  const sheet = document.createElement('div');
+  sheet.className = 'sheet';
+  sheet.innerHTML = `<div class="sheetbox">
+      <div class="sheettitle">${esc(it.ur)}</div>
+      <button data-act="open">کھولیں<span class="latin"> Open</span></button>
+      <button data-act="bmk">${marked ? 'Bookmark ہٹائیں' : 'Bookmark کریں'}</button>
+      <button data-act="dl">صوت<span class="latin"> Download</span></button>
+      <button data-act="share"><span class="latin">Share</span></button>
+      <button data-act="close" class="cancel"><span class="latin">Cancel</span></button>
+    </div>`;
+  document.body.appendChild(sheet);
+  sheet.onclick = e => {
+    const act = e.target.closest('button')?.dataset.act;
+    if (!act && e.target !== sheet) return;
+    if (act === 'open') location.hash = '#/read/' + id;
+    if (act === 'bmk'){
+      const n = bookmarks.indexOf(id);
+      if (n > -1) bookmarks.splice(n, 1); else bookmarks.push(id);
+      store.set('bookmarks', bookmarks);
+    }
+    if (act === 'dl') downloadAudio(id);
+    if (act === 'share' && navigator.share)
+      navigator.share({ title: it.ur, url: location.origin + location.pathname + '#/read/' + id });
+    sheet.remove();
+    if (act === 'bmk') render();
+  };
+}
+
+function downloadAudio(id){
+  const meta = item(id);
+  if (!meta || !meta.audio_count){ toast('اس متن کے لیے صوت موجود نہیں'); return; }
+  if (!(navigator.serviceWorker && navigator.serviceWorker.controller)){
+    toast('Offline mode ابھی تیار نہیں'); return;
+  }
+  loadItem(id).then(it => {
+    (it.audio || []).forEach(a =>
+      navigator.serviceWorker.controller.postMessage({ type:'CACHE_AUDIO', url: a.file }));
+    downloaded[id] = (it.audio || []).length;
+    store.set('downloaded', downloaded);
+    toast(`${downloaded[id]} صوت download ہو گئیں`);
+    render();
+  }).catch(() => toast('Download ناکام'));
+}
+
+/* نمائش کی تنظیمات — متن چھوڑے بغیر */
+function openDisplay(){
+  const sheet = document.createElement('div');
+  sheet.className = 'sheet';
+  sheet.innerHTML = `<div class="sheetbox">
+    <div class="sheettitle">تنظیمِ نمائش<span class="latin"> Display</span></div>
+    <div class="dispRow">
+      <span>عربی فونٹ</span>
+      <span><button class="tbtn latin" data-fs="-2">A−</button>
+            <button class="tbtn latin" data-fs="2">A+</button></span>
+    </div>
+    <button data-act="ur">اردو ترجمہ<span class="latin"> ${showUrdu ? 'On' : 'Off'}</span></button>
+    <button data-act="dark">رات کا موڈ<span class="latin"> ${dark ? 'On' : 'Off'}</span></button>
+    <div style="border-top:1px solid rgba(27,42,71,.07);padding:12px">
+      <span style="display:block;font-family:'Noto Nastaliq Urdu',serif;font-size:14px;margin-bottom:10px">
+        سطروں کا فاصلہ<span class="latin"> Line spacing</span>
+      </span>
+      <div style="display:flex;gap:8px">
+        <button class="dispbtn" data-lh="1.8">قریب</button>
+        <button class="dispbtn" data-lh="2.1">معمول</button>
+        <button class="dispbtn" data-lh="2.6">کشادہ</button>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(27,42,71,.07);padding:12px">
+      <span style="display:block;font-family:'Noto Nastaliq Urdu',serif;font-size:14px;margin-bottom:10px">
+        رنگ<span class="latin"> Theme</span>
+      </span>
+      <div style="display:flex;gap:8px">
+        <button class="dispbtn" data-bg="normal">عام</button>
+        <button class="dispbtn" data-bg="sepia">سپیا</button>
+        <button class="dispbtn" data-bg="warm">گرم</button>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(27,42,71,.07);padding:10px 0;margin:10px 12px 0">
+      <span style="display:block;padding:12px;font-family:'Noto Nastaliq Urdu',serif;font-size:14px">
+        خودکار حرکتِ متن<span class="latin"> Auto-scroll</span>
+      </span>
+      <div style="display:flex;align-items:center;gap:10px;padding:0 12px">
+        <input type="range" value="${scrollSpeed}" min="10" max="100" step="5" style="flex:1;accent-color:var(--gold)">
+        <span style="font-size:12px;color:var(--muted);min-width:30px;font-family:'Inter',sans-serif">${Math.round(scrollSpeed)}%</span>
+      </div>
+    </div>
+    <button data-act="x" class="cancel"><span class="latin">Close</span></button>
+  </div>`;
+  document.body.appendChild(sheet);
+  sheet.onclick = e => {
+    const b = e.target.closest('button');
+    if (!b){ if (e.target === sheet) sheet.remove(); return; }
+    if (b.dataset.fs){
+      fontSize = Math.min(34, Math.max(15, fontSize + (+b.dataset.fs)));
+      store.set('fontSize', fontSize);
+      document.documentElement.style.setProperty('--fs', fontSize + 'px');
+const applyBg = () => {
+  const r = $('#reader'); if (r) {
+    r.classList.remove('normal','sepia','warm'); r.classList.add(bgMode);
+    r.style.lineHeight = lineHeight;
+  }
+};
+      return;                       /* sheet کھلی رہے تاکہ سائز جانچ سکیں */
+    }
+    if (b.dataset.act === 'ur'){
+      showUrdu = !showUrdu; store.set('showUrdu', showUrdu);
+      const r = $('#reader'); if (r) r.classList.toggle('hide-ur', !showUrdu);
+    }
+    if (b.dataset.act === 'dark'){
+      dark = !dark; store.set('dark', dark); document.body.classList.toggle('dark', dark);
+    }
+    const lhbtn = sheet.querySelector('[data-lh]');
+    if (lhbtn) {
+      sheet.querySelectorAll('[data-lh]').forEach(btn => {
+        if (+btn.dataset.lh === lineHeight) btn.classList.add('on');
+        btn.onclick = () => {
+          lineHeight = +btn.dataset.lh; store.set('lineHeight', lineHeight);
+          const r = $('#reader'); if (r) r.style.lineHeight = lineHeight;
+          sheet.querySelectorAll('[data-lh]').forEach(b => b.classList.remove('on'));
+          btn.classList.add('on');
+        };
+      });
+    }
+    const bgbtn = sheet.querySelector('[data-bg]');
+    if (bgbtn) {
+      sheet.querySelectorAll('[data-bg]').forEach(btn => {
+        if (btn.dataset.bg === bgMode) btn.classList.add('on');
+        btn.onclick = () => {
+          bgMode = btn.dataset.bg; store.set('bgMode', bgMode);
+          const r = $('#reader'); if (r) {
+            r.classList.remove('normal','sepia','warm'); r.classList.add(bgMode);
+          }
+          sheet.querySelectorAll('[data-bg]').forEach(b => b.classList.remove('on'));
+          btn.classList.add('on');
+        };
+      });
+    }
+    sheet.remove();
+  };
+}
+
+/* پڑھتے ہوئے اسکرین بند نہ ہو */
+let wakeLock = null;
+async function toggleAwake(){
+  try{
+    if (wakeLock){ await wakeLock.release(); wakeLock = null; toast('اسکرین معمول پر'); }
+    else { wakeLock = await navigator.wakeLock.request('screen'); toast('اسکرین جاگتی رہے گی'); }
+  }catch(e){ toast('یہ سہولت اس براؤزر میں نہیں'); }
+}
+
+function toast(msg){
+  const t = document.createElement('div');
+  t.className = 'toast'; t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 2200);
+}
+
+function viewIndex(){
+  return `
+  <header><div class="hrow"><span></span><div class="brand">فہرست</div><span></span></div></header>
+  <main>
+    ${DATA.categories.map(c => {
+      const n = DATA.items.filter(i => i.cat === c.id).length;
+      return `<button class="row" data-go="#/cat/${c.id}">
+        <span><span class="t">${esc(c.ur)}</span><span class="s">${esc(c.note)}</span></span>
+        <span class="s latin">${n} items</span></button>`;
+    }).join('')}
+  </main>`;
+}
+
+function viewCat(id, grp){
+  const c = DATA.categories.find(x => x.id === id) || { ur:'' };
+  const useGroups = (id === 'amaal') && !grp;
+  const list = DATA.items.filter(i => i.cat === id && (!grp || i.group === grp));
+  const gur = grp ? ((DATA.groups || []).find(g => g.id === grp) || {}).ur : '';
+
+  if (useGroups){
+    const h = hijriNum();
+    return `
+    <header><div class="hrow">
+      <button class="iconbtn" data-back aria-label="Back">›</button>
+      <div class="brand">${esc(c.ur)}</div><span style="width:38px"></span>
+    </div>
+    <div class="crumb"><button data-go="#/home">⌂</button><span>›</span><span>اعمالِ ماہ</span></div>
+    </header>
+    <main>
+      <button class="todaybtn" data-go="#/today">🗓 آج کے اعمال<span class="latin"> — Today</span></button>
+      ${(DATA.groups || []).map(g => `
+        <div class="row ${g.id === HMONTHS[h.m - 1] ? 'now' : ''}" data-go="#/cat/amaal/${g.id}">
+          <span class="grow" data-go="#/cat/amaal/${g.id}">
+            <span class="t">${esc(g.ur)}${g.id === HMONTHS[h.m - 1] ? ' — رواں ماہ' : ''}</span>
+            <span class="s latin">${g.count} items</span>
+          </span>
+          <span class="chev">‹</span>
+        </div>`).join('')}
+    </main>`;
+  }
+  return `
+  <header><div class="hrow">
+    <button class="iconbtn" data-back aria-label="Back">›</button>
+    <div class="brand">${esc(c.ur)}</div><span style="width:38px"></span>
+  </div>
+  <div class="crumb">
+    <button data-go="#/home">⌂</button><span>›</span>
+    ${grp ? `<button data-go="#/cat/amaal">${esc(c.ur)}</button><span>›</span><span>${esc(gur)}</span>`
+          : `<span>${esc(c.note || c.ur)}</span>`}
+  </div></header>
+  <main>
+    <div class="catsearch"><span>⌕</span>
+      <input id="cq" placeholder="اس فہرست میں search کریں" autocomplete="off"></div>
+    <div id="catlist">${list.length ? list.map(rowHTML).join('')
+      : '<p class="empty">اس category میں ابھی کچھ نہیں ہے۔</p>'}</div>
+  </main>`;
+}
+
+function viewRead(id){
+  const meta = item(id) || { ur:'' };
+  loadItem(id)
+    .then(it => { const m = document.querySelector('main'); if (m) { m.outerHTML = readerHTML(it); wire('read', id); } })
+    .catch(() => { const m = document.querySelector('main'); if (m) m.innerHTML = '<p class="empty">یہ متن لوڈ نہیں ہوا۔</p>'; });
+  return `<main><p class="empty">${esc(meta.ur)} … loading</p></main>`;
+}
+
+function readerHTML(it){
+  const id = it.id;
+  const marked = bookmarks.includes(id);
+  return `
+  <main class="reader ${showUrdu ? '' : 'hide-ur'}" id="reader">
+    <div class="rhead">
+      <button class="iconbtn" data-back aria-label="Back">›</button>
+      <div class="t">${esc(it.ur)}</div>
+      <span style="display:flex;gap:6px">
+        <button class="iconbtn" id="bmk" aria-label="Bookmark">${marked ? '★' : '☆'}</button>
+        <button class="iconbtn" id="rmenu" aria-label="More">⋮</button>
+      </span>
+    </div>
+    <div class="toolbar">
+      <button class="tbtn" id="focusBtn">Focus</button>
+      <button class="tbtn ${showUrdu ? 'on' : ''}" id="urBtn">اردو</button>
+      <button class="tbtn" id="dlBtn">↓ Download</button>
+    </div>
+    ${it.lines.map((l, n) => `
+      <div class="line ${n % 2 ? 'alt' : ''}" data-n="${n}">
+        <div class="ar">${esc(l.ar)}</div>
+        <div class="ur">${esc(l.ur)}</div>
+      </div>`).join('')}
+    ${(it.audio && it.audio.length) ? `
+    <div class="player" id="player">
+      ${it.audio.length > 1 ? `<button class="rep" id="prec">${esc(it.audio[0].reciter)}</button>` : ''}
+      <button class="rep" id="prep"><span class="latin">Repeat: off</span></button>
+      <input type="range" id="pseek" value="0" min="0" max="100" step="1" aria-label="Seek">
+      <span class="ptime latin" id="ptime">0:00</span>
+      <button class="pplay" id="pplay" aria-label="Play">▶</button>
+      <button class="pbtn" id="pspeed" title="Speed">1x</button>
+      <button class="pbtn" id="peq" title="EQ">EQ</button>
+    </div>
+    <div class="repeatbar" id="repeatbar" style="display:none">
+      <span class="repcnt" id="repcnt">۱ بار</span>
+      <div style="display:flex;align-items:center;gap:8px;margin-inline-start:auto">
+        <button class="repbtn" id="repLess">−</button>
+        <input type="number" id="repInput" min="1" max="20" style="width:35px;text-align:center;border:1px solid var(--line);border-radius:6px;padding:4px;font-family:'Inter',sans-serif">
+        <button class="repbtn" id="repMore">+</button>
+      </div>
+    </div>
+    <div class="scroller" id="scroller" style="display:none">
+      <button class="sbtn" id="scrollBtn" aria-label="Auto scroll">⬇</button>
+      <input type="range" id="scrollSpeed" value="50" min="10" max="100" step="5" aria-label="Scroll speed" title="رفتار">
+    </div>` : ''}
+    <audio id="au" src="${esc(it.audio && it.audio[0] ? it.audio[0].file : '')}" preload="metadata"></audio>
+  </main>`;
+}
+
+function viewToday(){
+  const h = hijriNum(), mid = HMONTHS[h.m - 1];
+  const exact = DATA.items.filter(i =>
+    (i.hijri || []).some(x => x.m === h.m && x.d === h.d));
+  const month = DATA.items.filter(i => i.group === mid && !exact.includes(i));
+  return `
+  <header><div class="hrow">
+    <button class="iconbtn" data-back aria-label="Back">›</button>
+    <div class="brand">آج کے اعمال</div><span style="width:38px"></span>
+  </div>
+  <div class="crumb"><button data-go="#/home">⌂</button><span>›</span><span>${esc(hijri())}</span></div>
+  </header>
+  <main>
+    <div class="sechead"><span>آج کے مخصوص اعمال</span></div>
+    ${exact.length ? exact.map(rowHTML).join('')
+      : '<p class="empty">آج کی تاریخ کے لیے کوئی مخصوص عمل درج نہیں۔</p>'}
+    <div class="sechead"><span>اس مہینے کے اعمال</span></div>
+    ${month.length ? month.map(rowHTML).join('')
+      : '<p class="empty">اس مہینے کے اعمال ابھی شامل نہیں ہوئے۔</p>'}
+  </main>`;
+}
+
+function viewBookmarks(){
+  const list = DATA.items.filter(i => bookmarks.includes(i.id));
+  return `
+  <header><div class="hrow">
+    <button class="iconbtn" data-back aria-label="Back">›</button>
+    <div class="brand">نشان زدہ</div><span style="width:38px"></span>
+  </div></header>
+  <main>${list.length ? list.map(rowHTML).join('')
+    : '<p class="empty">ابھی کوئی bookmark نہیں۔ کسی دعا میں ☆ دبائیں۔</p>'}</main>`;
+}
+
+function viewTasbih(){
+  return `
+  <header><div class="hrow"><span></span><div class="brand">ذکر شمار</div><span></span></div></header>
+  <main class="counter">
+    <div class="count" id="cnum">${count}</div>
+    <button class="tapzone" id="tap">ذکر کے لیے دبائیں</button>
+    <button class="tbtn latin" id="reset"
+      style="background:var(--paper-2);color:var(--ink)">Reset</button>
+  </main>`;
+}
+
+function viewSettings(){
+  return `
+  <header><div class="hrow"><span></span><div class="brand">Settings</div><span></span></div></header>
+  <main>
+    <div class="sechead"><span class="latin">Font size</span></div>
+    <div class="row" style="cursor:default">
+      <span class="t">عربی متن</span>
+      <span>
+        <button class="tbtn latin" id="fsm" style="background:var(--night)">A−</button>
+        <button class="tbtn latin" id="fsp" style="background:var(--night)">A+</button>
+      </span>
+    </div>
+    <div class="sechead"><span class="latin">Display</span></div>
+    <button class="row" id="tgUr"><span class="t">اردو ترجمہ</span>
+      <span class="s latin">${showUrdu ? 'On' : 'Off'}</span></button>
+    <button class="row" id="tgDark"><span class="t">رات کا موڈ</span>
+      <span class="s latin">${dark ? 'On' : 'Off'}</span></button>
+    <div class="sechead"><span class="latin">About</span></div>
+    <p class="empty">یہ ایک نمونہ (demo) ہے — ابھی صرف چند متون شامل ہیں۔<br>
+      Install کرنے کے بعد یہ offline بھی چلتا ہے۔</p>
+  </main>`;
+}
+
+/* ════════ router ════════ */
+function render(){
+  const h = location.hash || '#/home';
+  const [, part, arg, arg2] = h.split('/');
+  let html;
+  if (part === 'index')          html = viewIndex();
+  else if (part === 'cat')       html = viewCat(arg, arg2);
+  else if (part === 'today')     html = viewToday();
+  else if (part === 'read')      html = viewRead(arg);
+  else if (part === 'bookmarks') html = viewBookmarks();
+  else if (part === 'tasbih')    html = viewTasbih();
+  else if (part === 'settings')  html = viewSettings();
+  else                           html = viewHome();
+  app.innerHTML = html;
+  window.scrollTo(0, 0);
+  document.querySelectorAll('nav button').forEach(b =>
+    b.classList.toggle('on', b.dataset.go === '#/' + (part || 'home')));
+  wire(part, arg, arg2);
+}
+
+function wire(part, arg, arg2){
+  document.querySelectorAll('[data-go]').forEach(el =>
+    el.onclick = () => location.hash = el.dataset.go);
+  document.querySelectorAll('[data-dl]').forEach(el =>
+    el.onclick = e => { e.stopPropagation(); downloadAudio(el.dataset.dl); });
+  document.querySelectorAll('[data-menu]').forEach(el =>
+    el.onclick = e => { e.stopPropagation(); openMenu(el.dataset.menu); });
+
+  const cq = $('#cq');
+  if (cq) cq.oninput = () => {
+    const v = cq.value.trim();
+    const list = DATA.items.filter(i => i.cat === arg && (!arg2 || i.group === arg2) &&
+      (!v || (i.ur + ' ' + i.en + ' ' + (i.when||'')).includes(v)));
+    $('#catlist').innerHTML = list.length ? list.map(rowHTML).join('')
+      : '<p class="empty">کچھ نہیں ملا۔</p>';
+    wire(part, arg, arg2);
+  };
+  document.querySelectorAll('[data-back]').forEach(el =>
+    el.onclick = () => history.back());
+
+  const q = $('#q');
+  if (q) q.oninput = () => {
+    const v = q.value.trim();
+    if (!v) return render();
+    
+    /* detect کہ سرچ کیا ہے: اردو یا عربی یا انگلش */
+    const isUrdu = /[ء-ي]/.test(v) && !/[ء-ي]/.test(v.replace(/[ا-ي]/g,''));  /* اردو/فارسی حروف */
+    const isArabic = /[؀-ۿ]/.test(v) && !isUrdu;
+    
+    const hits = DATA.items.filter(i => {
+      /* اردو سرچ: عنوان + ترجمے میں ڈھونڈو */
+      if (isUrdu) return (i.ur + ' ' + (i.when||'')).includes(v) ||
+        (i.lines || []).some(l => (l.ur || '').includes(v));
+      
+      /* عربی سرچ: متن میں ڈھونڈو */
+      if (isArabic) return (i.lines || []).some(l => (l.ar || '').includes(v));
+      
+      /* انگلش/لاطینی سرچ: عنوان */
+      return (i.en + ' ' + (i.when||'')).toLowerCase().includes(v.toLowerCase());
+    });
+    
+    const bycat = {};
+    hits.forEach(i => {
+      if (!bycat[i.cat]) bycat[i.cat] = [];
+      bycat[i.cat].push(i);
+    });
+    
+    const main = document.querySelector('main');
+    if (!hits.length) {
+      main.innerHTML = '<p class="empty">کچھ نہیں ملا۔</p>';
+      return;
+    }
+    
+    let html = '';
+    DATA.categories.forEach(c => {
+      if (!bycat[c.id]) return;
+      html += `<div class="searchgroup">
+        <div class="grouphead" onclick="this.nextElementSibling.classList.toggle('hide')">
+          <span class="gtog">▼</span> <span>${esc(c.ur)}</span>
+          <span class="gcount latin">${bycat[c.id].length}</span>
+        </div>
+        <div class="grouplist">${bycat[c.id].map(rowHTML).join('')}</div>
+      </div>`;
+    });
+    main.innerHTML = html;
+    main.querySelectorAll('[data-go]').forEach(el =>
+      el.onclick = () => location.hash = el.dataset.go);
+  };
+
+  if (part === 'read'){
+    const reader = $('#reader'), au = $('#au'), it = cache[arg];
+    if (!reader || !it) return;
+
+    $('#focusBtn').onclick = e => {
+      reader.classList.toggle('focus');
+      e.target.classList.toggle('on');
+      if (reader.classList.contains('focus'))
+        reader.querySelector('.line').classList.add('active');
+    };
+    $('#urBtn').onclick = e => {
+      showUrdu = !showUrdu; store.set('showUrdu', showUrdu);
+      reader.classList.toggle('hide-ur', !showUrdu);
+      e.target.classList.toggle('on', showUrdu);
+    };
+    reader.querySelectorAll('.line').forEach(l => l.onclick = () => {
+      reader.querySelectorAll('.line').forEach(x => x.classList.remove('active'));
+      l.classList.add('active');
+    });
+    $('#bmk').onclick = e => {
+      const i = bookmarks.indexOf(arg);
+      if (i > -1) bookmarks.splice(i, 1); else bookmarks.push(arg);
+      store.set('bookmarks', bookmarks);
+      e.target.textContent = bookmarks.includes(arg) ? '★' : '☆';
+    };
+    $('#dlBtn').onclick = () => downloadAudio(arg);
+
+    $('#rmenu').onclick = () => {
+      const sheet = document.createElement('div');
+      sheet.className = 'sheet';
+      sheet.innerHTML = `<div class="sheetbox">
+        <div class="sheettitle">${esc(it.ur)}</div>
+        <button data-act="bmk">${bookmarks.includes(arg) ? 'Bookmark ہٹائیں' : 'نشان زدہ کریں'}</button>
+        <button data-act="display">تنظیمِ نمائش<span class="latin"> Display</span></button>
+        <button data-act="awake" id="awakeBtn">اسکرین جاگتی رکھیں<span class="latin"> ${
+          wakeLock ? 'On' : 'Off'}</span></button>
+        <button data-act="share"><span class="latin">Share</span></button>
+        <button data-act="x" class="cancel"><span class="latin">Cancel</span></button>
+      </div>`;
+      document.body.appendChild(sheet);
+      sheet.onclick = e => {
+        const act = e.target.closest('button')?.dataset.act;
+        if (!act && e.target !== sheet) return;
+        if (act === 'bmk') $('#bmk').click();
+        if (act === 'display'){ sheet.remove(); openDisplay(); return; }
+        if (act === 'awake') toggleAwake();
+        if (act === 'share' && navigator.share)
+          navigator.share({ title: it.ur, url: location.href });
+        sheet.remove();
+      };
+    };
+
+    /* ── player ── */
+    const play = $('#pplay');
+    if (!play) return;
+    const seek = $('#pseek'), tlab = $('#ptime'), rep = $('#prep'), recBtn = $('#prec');
+    let track = 0;
+    const MODES = [
+      { k:'off',  ur:'بدون تکرار', en:'Repeat: off' },
+      { k:'one',  ur:'ایک صوت',    en:'Repeat: one' },
+      { k:'line', ur:'ایک سطر',    en:'Repeat: line' }
+    ];
+    let mode = 0;
+    const mmss = t => (isNaN(t) ? '0:00'
+      : Math.floor(t / 60) + ':' + String(Math.floor(t % 60)).padStart(2, '0'));
+
+    play.onclick = () => {
+      if (au.paused) au.play().then(() => play.textContent = '❚❚')
+        .catch(() => toast('صوت فائل موجود نہیں — پہلے mp3 شامل کریں'));
+      else { au.pause(); play.textContent = '▶'; }
+    };
+    au.ontimeupdate = () => {
+      if (au.duration) seek.value = (au.currentTime / au.duration) * 100;
+      tlab.textContent = mmss(au.currentTime);
+    };
+    au.onended = () => {
+      if (MODES[mode].k === 'off') play.textContent = '▶';
+      else { au.currentTime = 0; au.play(); }
+    };
+    seek.oninput = () => { if (au.duration) au.currentTime = (seek.value / 100) * au.duration; };
+    rep.onclick = () => {
+      mode = (mode + 1) % MODES.length;
+      rep.innerHTML = `<span class="latin">${MODES[mode].en}</span>`;
+      rep.classList.toggle('on', mode > 0);
+    };
+    /* ── auto-scroll ── */
+    let scrollAnimId = null, isScrolling = false;
+    const scroller = $('#scroller'), scrollBtn = $('#scrollBtn'), scrollRng = $('#scrollSpeed');
+    if (scroller){
+      scrollBtn.onclick = () => {
+        isScrolling = !isScrolling;
+        scrollBtn.classList.toggle('on', isScrolling);
+        store.set('autoScroll', isScrolling);
+        if (isScrolling) startScroll(); else stopScroll();
+      };
+      scrollRng.oninput = () => { scrollSpeed = +scrollRng.value; store.set('scrollSpeed', scrollSpeed); };
+      scrollRng.value = scrollSpeed;
+      if (autoScroll) { isScrolling = true; scrollBtn.classList.add('on'); startScroll(); }
+    }
+
+    function startScroll(){
+      if (scrollAnimId) return;
+      const reader = $('#reader');
+      scrollAnimId = setInterval(() => {
+        if (!isScrolling || !reader) return;
+        reader.scrollTop += scrollSpeed / 20;  /* slower = gentler */
+      }, 50);
+    }
+    function stopScroll(){ if (scrollAnimId) { clearInterval(scrollAnimId); scrollAnimId = null; } }
+
+    /* اگر صوت چل رہی ہو تو scroll کو اسی سے sync کریں */
+    au.onplay = () => { if (isScrolling) startScroll(); };
+    au.onpause = () => { stopScroll(); };
+
+    /* ایک سے زیادہ قاری ہوں تو انتخاب کی فہرست */
+    if ($('#pspeed')) {
+      $('#pspeed').textContent = playSpeed.toFixed(2) + 'x';
+      $('#pspeed').onclick = () => {
+        const speeds = [0.75, 1, 1.25, 1.5, 2];
+        const idx = speeds.indexOf(playSpeed);
+        playSpeed = speeds[(idx + 1) % speeds.length];
+        store.set('playSpeed', playSpeed);
+        $('#pspeed').textContent = playSpeed.toFixed(2) + 'x';
+        if (au) au.playbackRate = playSpeed;
+      };
+      if (au) au.playbackRate = playSpeed;
+    }
+
+    /* ── repeat counter + limit ── */
+    const repbar = $('#repeatbar'), repcnt = $('#repcnt'), repInput = $('#repInput');
+    const repLess = $('#repLess'), repMore = $('#repMore');
+    if (repbar && au) {
+      const initCount = (repeatCount[arg] || 0);
+      repeatPlayedTimes = 0;
+      
+      // UI setup
+      repInput.value = repeatLimit > 0 ? repeatLimit : '';
+      repcnt.innerHTML = `<span>${initCount + 1} <span class="latin">×</span></span>`;
+      repbar.style.display = 'block';
+      
+      // number input
+      repInput.oninput = () => {
+        repeatLimit = +repInput.value || 0;
+        store.set('repeatLimit', repeatLimit);
+      };
+      
+      // +/- buttons
+      repLess.onclick = () => {
+        repeatLimit = Math.max(0, (repeatLimit > 0 ? repeatLimit - 1 : 0));
+        repInput.value = repeatLimit > 0 ? repeatLimit : '';
+        store.set('repeatLimit', repeatLimit);
+      };
+      repMore.onclick = () => {
+        repeatLimit = Math.min(20, (repeatLimit > 0 ? repeatLimit + 1 : 2));
+        repInput.value = repeatLimit;
+        store.set('repeatLimit', repeatLimit);
+      };
+      
+      // onended: check limit
+      au.onended = () => {
+        repeatPlayedTimes++;
+        if (MODES[mode].k === 'off') { play.textContent = '▶'; repeatPlayedTimes = 0; }
+        else if (repeatLimit > 0 && repeatPlayedTimes >= repeatLimit) {
+          play.textContent = '▶';  /* رک جاؤ */
+          repeatPlayedTimes = 0;
+          repeatCount[arg] = (repeatCount[arg] || 0) + repeatPlayedTimes;
+          store.set('repeatCount', repeatCount);
+        } else {
+          repeatCount[arg] = (repeatCount[arg] || 0) + 1;
+          store.set('repeatCount', repeatCount);
+          repcnt.innerHTML = `<span>${repeatCount[arg] + 1} <span class="latin">×</span></span>`;
+          au.currentTime = 0; au.play();
+        }
+      };
+    }
+
+    /* ── audio EQ ── */
+    const peq = $('#peq');
+    if (peq && au) {
+      const eqs = [
+        {k:'normal',  ur:'عام',     bass:0,   mid:0,   treble:0},
+        {k:'boost',   ur:'بھرپور',  bass:8,   mid:2,   treble:6},
+        {k:'clear',   ur:'صاف',    bass:2,   mid:-3,  treble:8},
+        {k:'warm',    ur:'گرم',     bass:10,  mid:4,   treble:2},
+      ];
+      let eqIdx = eqs.findIndex(e => e.k === audioEQ);
+      if (eqIdx < 0) eqIdx = 0;
+
+      peq.onclick = () => {
+        const sheet = document.createElement('div');
+        sheet.className = 'sheet';
+        sheet.innerHTML = `<div class="sheetbox">
+          <div class="sheettitle">صوت کی معیار<span class="latin"> Audio EQ</span></div>
+          ${eqs.map((e,n) => `<button data-eq="${n}" class="${n === eqIdx ? 'on' : ''}" style="display:block;width:100%;text-align:right;background:none;border:0;padding:14px 12px;border-top:1px solid rgba(27,42,71,.07);cursor:pointer;font-family:'Noto Nastaliq Urdu',serif;font-size:15px">
+            ${n === eqIdx ? '✓ ' : ''}${e.ur}</button>`).join('')}
+          <button data-eq="x" class="cancel" style="display:block;width:100%;text-align:right;background:none;border:0;padding:14px 12px;border-top:1px solid rgba(27,42,71,.07);cursor:pointer;color:var(--muted);font-family:'Noto Nastaliq Urdu',serif;font-size:15px"><span class="latin">Cancel</span></button>
+        </div>`;
+        document.body.appendChild(sheet);
+        sheet.onclick = e => {
+          const n = e.target.closest('button')?.dataset.eq;
+          if (n !== undefined && n !== 'x'){
+            eqIdx = +n;
+            audioEQ = eqs[eqIdx].k;
+            store.set('audioEQ', audioEQ);
+            peq.textContent = 'EQ ✓';
+          }
+          sheet.remove();
+        };
+      };
+      peq.textContent = eqIdx > 0 ? 'EQ ✓' : 'EQ';
+    }
+
+    if (recBtn) recBtn.onclick = () => {
+      const sheet = document.createElement('div');
+      sheet.className = 'sheet';
+      sheet.innerHTML = `<div class="sheetbox">
+        <div class="sheettitle"><span class="latin">Reciter</span> — قاری منتخب کریں</div>
+        ${it.audio.map((a, n) => `<button data-t="${n}">
+            ${n === track ? '● ' : ''}${esc(a.reciter || ('صوت ' + (n + 1)))}</button>`).join('')}
+        <button data-t="x" class="cancel"><span class="latin">Cancel</span></button>
+      </div>`;
+      document.body.appendChild(sheet);
+      sheet.onclick = e => {
+        const t = e.target.closest('button')?.dataset.t;
+        if (t !== undefined && t !== 'x'){
+          track = +t;
+          const was = !au.paused;
+          au.src = it.audio[track].file;
+          recBtn.textContent = it.audio[track].reciter || ('صوت ' + (track + 1));
+          if (was) au.play().catch(() => {});
+        }
+        if (t !== undefined || e.target === sheet) sheet.remove();
+      };
+    };
+  }
+
+  if (part === 'tasbih'){
+    $('#tap').onclick = () => {
+      count++; store.set('count', count); $('#cnum').textContent = count;
+      if (navigator.vibrate) navigator.vibrate(12);
+    };
+    $('#reset').onclick = () => { count = 0; store.set('count', 0); $('#cnum').textContent = 0; };
+  }
+
+  if (part === 'settings'){
+    const setFS = v => {
+      fontSize = Math.min(34, Math.max(15, v)); store.set('fontSize', fontSize);
+      document.documentElement.style.setProperty('--fs', fontSize + 'px');
+const applyBg = () => {
+  const r = $('#reader'); if (r) {
+    r.classList.remove('normal','sepia','warm'); r.classList.add(bgMode);
+    r.style.lineHeight = lineHeight;
+  }
+};
+    };
+    $('#fsp').onclick = () => setFS(fontSize + 2);
+    $('#fsm').onclick = () => setFS(fontSize - 2);
+    $('#tgUr').onclick = () => { showUrdu = !showUrdu; store.set('showUrdu', showUrdu); render(); };
+    $('#tgDark').onclick = () => {
+      dark = !dark; store.set('dark', dark);
+      document.body.classList.toggle('dark', dark); render();
+    };
+  }
+}
+
+/* ════════ boot ════════ */
+fetch('data/index.json')
+  .then(r => r.json())
+  .then(d => { DATA = d; render(); })
+  .catch(() => { app.innerHTML = '<p class="empty">data/index.json لوڈ نہیں ہوا — ایک local server چلائیں۔</p>'; });
+
+// ہر متن اپنی الگ فائل سے آتا ہے، اور ایک بار لوڈ ہونے کے بعد memory میں رہتا ہے
+const cache = {};
+function loadItem(id){
+  if (cache[id]) return Promise.resolve(cache[id]);
+  return fetch('data/items/' + id + '.json')
+    .then(r => { if (!r.ok) throw 0; return r.json(); })
+    .then(j => (cache[id] = j));
+}
+
+window.addEventListener('hashchange', render);
+document.querySelectorAll('nav [data-go]').forEach(el =>
+  el.onclick = () => location.hash = el.dataset.go);
+
+/* install prompt */
+let deferred;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault(); deferred = e; $('#installbar').classList.add('show');
+});
+$('#installBtn').onclick = async () => {
+  if (!deferred) return;
+  deferred.prompt(); await deferred.userChoice;
+  deferred = null; $('#installbar').classList.remove('show');
+};
+
+if ('serviceWorker' in navigator)
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+</script>
+</body>
+</html>
